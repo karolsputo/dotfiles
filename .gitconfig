@@ -1,6 +1,14 @@
 [alias]
 
 	st = status
+  ci = commit
+  ps = push
+  pl = pull
+  mg = merge
+  rb = rebase
+  ft = fetch
+  br = branch
+  co = checkout
 
 [apply]
 

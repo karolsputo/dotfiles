@@ -9,6 +9,7 @@ export PATH=/Library/TeX/texbin:$PATH
 
 alias 'ls'='ls -la';
 alias 'cdp'='cd ~/projects';
+alias 'ec'='emacsclient -t'
 
 PS1="%{$fg[white]%}%n@%m:%{$reset_color%}";
 PS1+="%{$fg[red]%}%~%{$reset_color%}";
