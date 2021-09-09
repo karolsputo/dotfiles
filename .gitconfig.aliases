@@ -1,0 +1,17 @@
+[alias]
+
+	st = status
+	df = diff
+	dfs = diff --staged
+	lg = log
+	lgp = log --pretty=oneline
+	ci = commit
+  cia = commit --amend
+	ps = push
+  psf = push --force
+	pl = pull
+	mg = merge
+	rb = rebase
+	ft = fetch
+	br = branch
+	co = checkout
