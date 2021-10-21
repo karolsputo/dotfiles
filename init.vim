@@ -14,7 +14,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 
 
 " Initialize plugin system
@@ -50,3 +50,7 @@ nnoremap <Up>    :resize +1<CR>
 nnoremap <Down>  :resize -1<CR>
 nnoremap <Left>  :vertical resize +1<CR>
 nnoremap <Right> :vertical resize -1<CR>
+
+" Colors
+" hi StatusLine guifg=white ctermfg=#2e3642
+hi StatusLine ctermfg=white
