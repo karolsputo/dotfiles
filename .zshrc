@@ -103,5 +103,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="$PATH:/Users/karolsputo/.cargo/bin"
-source /Users/karolsputo/code/openpilot/tools/openpilot_env.sh

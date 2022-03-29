@@ -1,6 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " Comments
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'tpope/vim-commentary'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -54,3 +56,10 @@ nnoremap <Right> :vertical resize -1<CR>
 " Colors
 " hi StatusLine guifg=white ctermfg=#2e3642
 hi StatusLine ctermfg=white
+
+set undofile
+set undodir=~/.vim/undodir
+
+:inoremap <Space> <Space><C-g>u
+:inoremap <Return> <Return><C-g>u
+:inoremap <Tab> <Tab><C-g>u
