@@ -1,5 +1,5 @@
 set hlsearch    " highlight all search results
-set ignorecase  " do case insensitive search 
+set ignorecase  " do case insensitive search
 set incsearch   " show incremental search results as you type
 set relativenumber
 set number      " display line number
@@ -26,14 +26,20 @@ set undodir=~/.vim/undodir
 :inoremap <Return> <Return><C-g>u
 :inoremap <Tab> <Tab><C-g>u
 
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 call plug#begin()
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-commentary'
-Plug 'dense-analysis/ale'
+
+Plug 'hashivim/vim-terraform'
+
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'peitalin/vim-jsx-typescript'
 
 call plug#end()
-
-let g:ale_python_pylint_change_directory = 0
