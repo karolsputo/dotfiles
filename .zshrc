@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias nv="nvim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export NVM_DIR="$HOME/.nvm"
@@ -109,11 +109,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 eval "$(pyenv init -)"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/karolsputo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/karolsputo/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/karolsputo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/karolsputo/google-cloud-sdk/completion.zsh.inc'; fi
-
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/karolsputo/.opam/opam-init/init.zsh' ]] || source '/Users/karolsputo/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
